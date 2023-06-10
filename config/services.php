@@ -29,5 +29,9 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
+    'map' => [
+        'base_uri' => env('MAP_SERVICE_BASE_URL'),
+        'secret' => env('MAP_SERVICE_SECRET')
+    ],
 
 ];

@@ -18,14 +18,63 @@ var cities = [
     // Agrega un popup al marcador de Miami
     if (index === 0) {
         marker.bindPopup("Nueva York").openPopup();
+        marker.on('click', function() {
+            fetch('http://127.0.0.1:8000/api/map/1')
+                .then(response => response.json())
+                .then(data => {
+                    const content = `
+                    <h3>${data.data.ciudad}</h3>
+                    <p>Humedad: ${data.data.humedad}</p>
+                    <p>Fecha: ${data.data.fecha}</p>
+                `;
+                    marker.setPopupContent(content);
+                }
+                )
+                .catch(error => {
+                    console.log(error);
+                });
+        });
     }
+
 
     if (index === 1) {
         marker.bindPopup("Orlando").openPopup();
+        marker.on('click', function() {
+            fetch('http://127.0.0.1:8000/api/map/2')
+                .then(response => response.json())
+                .then(data => {
+                    const content = `
+                    <h3>${data.data.ciudad}</h3>
+                    <p>Humedad: ${data.data.humedad}</p>
+                    <p>Fecha: ${data.data.fecha}</p>
+                `;
+                    marker.setPopupContent(content);
+                }
+                )
+                .catch(error => {
+                    console.log(error);
+                });
+        });
     }
 
     if (index === 2) {
-      marker.bindPopup("Miami").openPopup();
+        marker.bindPopup("Miami").openPopup();
+        marker.on('click', function() {
+            fetch('http://127.0.0.1:8000/api/map/3')
+                .then(response => response.json())
+                .then(data => {
+                    const content = `
+                    <h3>${data.data.ciudad}</h3>
+                    <p>Humedad: ${data.data.humedad}</p>
+                    <p>Fecha: ${data.data.fecha}</p>
+                `;
+                    marker.setPopupContent(content);
+                }
+                )
+                .catch(error => {
+                    console.log(error);
+                });
+        });
     }
 
     return marker;

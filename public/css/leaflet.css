@@ -1,15 +1,35 @@
 /* Estilos personalizados para el popup */
-.leaflet-popup-content-wrapper {
-    background-color: #fff;
-    color: #333;
-    font-size: 14px;
+/* Estilos para el popup */
+.leaflet-popup {
+    min-width: 200px;
     padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    color: #333;
   }
 
-  .leaflet-popup-tip-container {
-    display: none;
+  /* Estilo para el título del popup */
+  .leaflet-popup h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
   }
 
+  /* Estilos para los párrafos del contenido del popup */
+  .leaflet-popup p {
+    margin-bottom: 5px;
+  }
+
+  /* Estilo para los enlaces del contenido del popup */
+  .leaflet-popup a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  /* Estilo para los enlaces del contenido del popup al pasar el cursor */
+  .leaflet-popup a:hover {
+    text-decoration: underline;
+  }
   .mapa__mapa{
     height: 400px;
   }
+
