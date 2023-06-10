@@ -1,0 +1,15 @@
+/* Estilos personalizados para el popup */
+.leaflet-popup-content-wrapper {
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .leaflet-popup-tip-container {
+    display: none;
+  }
+
+  .mapa__mapa{
+    height: 400px;
+  }
