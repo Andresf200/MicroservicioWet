@@ -23,9 +23,9 @@
         </div>
 
         <nav class="navegacion">
-            <a href="#" class="navegacion__link">Inicio</a>
+            <a href="{{ route('inicio') }}" class="navegacion__link">Inicio</a>
 
-            <a href="#" class="navegacion__link--historial">Historial</a>
+            <a href="{{ route('history') }}" class="navegacion__link--historial">Historial</a>
         </nav>
 
 

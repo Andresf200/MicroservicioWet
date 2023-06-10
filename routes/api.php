@@ -1,10 +1,10 @@
 <?php
 
 use App\Http\Controllers\MapController;
+use App\Http\Controllers\WeatherHistoryController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-use function PHPSTORM_META\map;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,4 +23,3 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get("/map/{map}",[MapController::class,'show'])
     ->name('map');
-
